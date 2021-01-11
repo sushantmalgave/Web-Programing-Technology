@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html>
+<head>
+</head>
+<body>
+    <script>
+        function convert_to_Coins(amount){
+           var  tf = amount/25;   // tf=3
+            amount = amount % 25; // amount=12 
+            var tn = amount/10; // tn=1
+            amount = amount % 10;//amount=2
+            var F = amount/5;
+            amount = amount % 5;
+            var t = amount/2;
+            amount = amount % 2;
+            // console.log(parseInt(tf));
+            console.log(Math.floor(tf));
+            console.log(Math.floor(tn));
+            console.log(Math.floor(F));
+            console.log(Math.floor(t));
+            console.log(Math.floor(amount));
+        }
+        convert_to_Coins(87);
+    </script>
+</body>
+</html>
